@@ -6,7 +6,6 @@
 mkdir -p $HOME/.iterm2
 cp dotfiles/com.googlecode.iterm2.plist $HOME/.iterm2
 
-fi
 # Specify the preferences directory
 defaults write com.googlecode.iterm2.plist PrefsCustomFolder -string "~/.iterm2"
 # Tell iTerm2 to use the custom preferences in the directory
