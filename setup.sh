@@ -46,6 +46,8 @@ done
 
 # tweak MacOs behaviour
 
+./system/trackpad.sh
+
 ./system/hotcorner.sh
 
 
