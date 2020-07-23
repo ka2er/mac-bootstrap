@@ -56,6 +56,8 @@ done
 
 ./system/mail.sh
 
+./system/iterm2.sh
+
 
 # T2 : sudo
 grep tid /etc/pam.d/sudo
