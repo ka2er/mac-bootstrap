@@ -18,6 +18,10 @@
 	<string>D64084F8-4900-49DF-9084-CFCEF2387837</string>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
+	<key>HideFromDockAndAppSwitcher</key>
+	<true/>
+	<key>HideMenuBarInFullscreen</key>
+	<false/>
 	<key>Hotkey</key>
 	<true/>
 	<key>HotkeyChar</key>
