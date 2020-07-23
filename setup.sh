@@ -44,6 +44,11 @@ for pkg in spectacle bitwarden macupdater homebrew/cask-fonts/font-meslolg-nerd-
     fi
 done
 
+# tweak MacOs behaviour
+
+./system/hotcorner.sh
+
+
 # T2 : sudo
 grep tid /etc/pam.d/sudo
 if [ $? -eq 0 ]; then
