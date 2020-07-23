@@ -50,6 +50,12 @@ done
 
 ./system/hotcorner.sh
 
+./system/safari.sh
+
+./system/finder.sh
+
+./system/mail.sh
+
 
 # T2 : sudo
 grep tid /etc/pam.d/sudo
