@@ -23,7 +23,7 @@ fi
 
 #
 # brew package
-for pkg in htop zsh-autosuggestions tree openssh; do
+for pkg in htop zsh-autosuggestions tree pstree pidof openssh; do
     if brew ls --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
@@ -32,6 +32,10 @@ for pkg in htop zsh-autosuggestions tree openssh; do
         brew  install $pkg
     fi
 done
+
+# elevetate htop perms
+sudo chown root:wheel /usr/local/Cellar/htop/*/bin/htop
+sudo chmod u+s /usr/local/Cellar/htop/*/bin/htop
 
 # casks
 for pkg in spectacle bitwarden macupdater homebrew/cask-fonts/font-meslolg-nerd-font iterm2 notion whatsapp feedly google-chrome fanny github visual-studio-code; do
