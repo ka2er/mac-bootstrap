@@ -21,7 +21,8 @@ else
     git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/themes/powerlevel10k
 fi
 
-
+# change oh-my-zsh theme
+sed -i bak 's#robbyrussell#powerlevel10k/powerlevel10k#' $HOME/.zshrc
 echo '# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.' >> $HOME/.zshrc
 echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> $HOME/.zshrc
 cp dotfiles/.p10k.zsh $HOME/
