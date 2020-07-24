@@ -58,7 +58,7 @@ done
 
 ./system/trackpad.sh
 
-./system/hotcorner.sh
+./system/hotcorners.sh
 
 ./system/safari.sh
 
