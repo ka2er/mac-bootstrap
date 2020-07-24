@@ -68,6 +68,7 @@ done
 
 ./system/iterm2.sh
 
+./system/sudo.sh
 
 # T2 : sudo
 grep tid /etc/pam.d/sudo
