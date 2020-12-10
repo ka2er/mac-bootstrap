@@ -35,7 +35,7 @@ for pkg in ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu; d
         echo "$pkg already installed. Skipping"
     else
         # The package is not installed
-        brew  install $pkg
+        brew install $pkg
     fi
 done
 
@@ -44,18 +44,17 @@ sudo chown root:wheel /usr/local/Cellar/htop/*/bin/htop
 sudo chmod u+s /usr/local/Cellar/htop/*/bin/htop
 
 # casks
-for pkg in spectacle bitwarden macupdater homebrew/cask-fonts/font-meslo-lg-nerd-font iterm2 notion whatsapp google-chrome fanny github visual-studio-code; do
+for pkg in rectangle bitwarden macupdater homebrew/cask-fonts/font-meslo-lg-nerd-font iterm2 notion whatsapp google-chrome fanny github visual-studio-code; do
     if brew list --cask --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
     else
         # The package is not installed
-        brew cask install $pkg
+        brew install --cask $pkg
     fi
 done
 
 # tweak MacOs behaviour
-
 for system in `ls system/`; do
 	./system/$system
 done
