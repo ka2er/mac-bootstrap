@@ -56,27 +56,9 @@ done
 
 # tweak MacOs behaviour
 
-./system/trackpad.sh
-
-./system/hotcorners.sh
-
-./system/safari.sh
-
-./system/finder.sh
-
-./system/mail.sh
-
-./system/iterm2.sh
-
-./system/sudo.sh
-
-# T2 : sudo
-grep tid /etc/pam.d/sudo
-if [ $? -eq 0 ]; then
-    echo "Sudo already allow T2 password input"
-else
-    echo "Adding support for T2 for sudo"
-fi
+for system in `ls system/`; do
+	./system/$system
+done
 
 # color vimrc
 echo "syntax on" > ~/.vimrc
