@@ -44,7 +44,7 @@ sudo chown root:wheel /usr/local/Cellar/htop/*/bin/htop
 sudo chmod u+s /usr/local/Cellar/htop/*/bin/htop
 
 # casks
-for pkg in rectangle bitwarden macupdater homebrew/cask-fonts/font-meslo-lg-nerd-font iterm2 notion whatsapp google-chrome fanny github visual-studio-code; do
+for pkg in rectangle bitwarden macupdater homebrew/cask-fonts/font-meslo-lg-nerd-font iterm2 notion whatsapp google-chrome fanny github visual-studio-code deskreen; do
     if brew list --cask --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
