@@ -29,7 +29,7 @@ cp dotfiles/.p10k.zsh $HOME/
 
 #
 # brew package
-for pkg in ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu; do
+for pkg in ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu mas; do
     if brew ls --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
