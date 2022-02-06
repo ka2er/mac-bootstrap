@@ -1,30 +1,32 @@
 #!/bin/sh
 
+exit
+
 # see https://github.com/boochtek/mac_config/blob/master/quicklook.sh
 
 # Preview Markdown files.
-brew cask install qlmarkdown
+brew --cask install qlmarkdown
 
 # Preview plain text files without a file extension (README, CHANGELOG, etc.).
-brew cask install qlstephen
+brew --cask install qlstephen
 
 # Preview source code files for various programming languages, with syntax highlighting.
-brew cask install qlcolorcode
+brew --cask install qlcolorcode
 
 # Preview JSON files.
-brew cask install quicklook-json
+brew --cask install quicklook-json
 
 # Preview CSV files.
-brew cask install quicklook-csv
+brew --cask install quicklook-csv
 
 # Preview diffs.
-brew cask install qlprettypatch
+brew --cask install qlprettypatch
 
 # Preview archives (ZIP, tar, gzip, bzip2, ARJ, LZH, ISO, etc.).
-#brew cask install betterzipql
+#brew --cask install betterzipql
 
 # Preview SSL/X509 certificate files (CRT, PEM, DER, etc.).
-#brew cask install cert-quicklook
+#brew --cask install cert-quicklook
 
 # Reload QuickLook daemon, so new plugins will work.
 qlmanage -r

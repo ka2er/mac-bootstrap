@@ -50,7 +50,7 @@ for pkg in rectangle bitwarden macupdater homebrew/cask-fonts/font-meslo-lg-nerd
         echo "$pkg already installed. Skipping"
     else
         # The package is not installed
-        brew install --cask $pkg
+        brew --cask install $pkg
     fi
 done
 
