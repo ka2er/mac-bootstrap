@@ -32,7 +32,7 @@ brew tap jorgelbg/tap
 
 #
 # brew package
-for pkg in gpg pinentry-mac pinentry-touchid ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu mas chezmoi bitwarden-cli; do
+for pkg in autojump gpg pinentry-mac pinentry-touchid ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu mas chezmoi bitwarden-cli; do
     if brew ls --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
