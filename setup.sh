@@ -27,12 +27,9 @@ echo '# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.' >> $HOME
 echo '[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh' >> $HOME/.zshrc
 cp dotfiles/.p10k.zsh $HOME/
 
-
-brew tap jorgelbg/tap 
-
 #
 # brew package
-for pkg in autojump gpg pinentry-mac pinentry-touchid ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu mas chezmoi bitwarden-cli; do
+for pkg in autojump gpg pinentry-mac ykman htop zsh-autosuggestions tree pstree pidof openssh lnav ncdu mas chezmoi bitwarden-cli; do
     if brew ls --versions $pkg > /dev/null; then
         # The package is installed
         echo "$pkg already installed. Skipping"
